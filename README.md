@@ -26,24 +26,6 @@ sequenceDiagram
 ```
 
 
-# Logistics Mock Delivery Plan
-
-- Order submitted
-  - Possibly add flag whether delivery cancel is acceptable to order_json in "ordermark" element.
-- Sync Consumer API sends update
-  - request_order_delivery() which checks app_id's logistics config.
-    - Hit Logistics and get some ID.
-      - Do we really need, or want, to hit Logistics?  Maybe just return simulated response from Logistics.
-  - Save LogisticsInformation() to S3
-  - Message scheduling
-    - Add new SNS+SQS with a delay
-    - Lambda handler:
-      - Receives SQS message
-      - Grabs next message in series, updates dates/times, etc.
-      - Posts to Logistics endpoint
-      - Publishes SNS with subsequent request in series of events, if there are more events in the series
-
-
 # Current Order Processing with Olo Validation
 
 ```mermaid
