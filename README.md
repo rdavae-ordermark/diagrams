@@ -26,40 +26,6 @@ sequenceDiagram
 ```
 
 
-# Logistics API Format 2021-04-08
-```JSON
-{
-    "origin": {
-        "city": "Mahopac",
-        "state": "NY",
-        "zip": "10541",
-        "address": "947 South Lake Blvd"
-    },
-    "delivery_by": "2019-09-10T22:00:00Z",
-    "primary_contact_phone": "8185551212",
-    "vendor_id": "x",
-    "app_id": "ordermark-denver-demo",
-    "special_instructions": null,
-    "restaurant_name": "Test Restaurant",
-    "order_route_name": "DoorDash Drive Service",
-    "dashboard_key": "6742696100626432",
-    "destination": {
-        "city": "mahopac",
-        "name": "Preston Rohner",
-        "zip": "10541",
-        "phone": "+18184686867",
-        "state": "NY",
-        "address": "947 s lake blvd"
-    },
-    "tip": 3.57,
-    "order": {
-        "items": "[{\"item_number\": 0, \"item_id\": \"71601778\", \"item_name\": \"BBQ Chicken Katsu Bowl\", \"quantity\": 1}, {\"item_number\": 1, \"item_id\": \"71601991\", \"item_name\": \"Sesame Seared Tuna\", \"quantity\": 1}]",
-        "order_total": 39.3,
-        "bag_count": 1
-    }
-}
-```
-
 # Logistics Mock Delivery Plan
 
 - Order submitted
